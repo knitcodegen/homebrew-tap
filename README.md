@@ -1,2 +1,8 @@
 # homebrew-tap
-Homebrew tap for `knit`
+This project hosts the homebrew tap for [`knit`](https://github.com/knitcodegen/knit) - the formula is automatically updated by goreleaser.
+
+```shell
+brew install knitcodegen/tap/knit
+```
+
+
