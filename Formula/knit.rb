@@ -5,21 +5,21 @@
 class Knit < Formula
   desc "Language & schema agnostic code generation toolkit"
   homepage "https://github.com/knitcodegen/knit"
-  version "0.5.0-beta"
+  version "0.6.0-beta"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/knitcodegen/knit/releases/download/v0.5.0-beta/knit_darwin_amd64.tar.gz"
-      sha256 "883b38ecf992a77c7513d66a183664ed8dd1aaff6d296506fb72220b1129f0db"
+      url "https://github.com/knitcodegen/knit/releases/download/v0.6.0-beta/knit_darwin_amd64.tar.gz"
+      sha256 "fb3378aa87d0ccafad20088c27db2a87b63f218604b7fd9fc6f9790e9c4964cd"
 
       def install
         bin.install "knit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/knitcodegen/knit/releases/download/v0.5.0-beta/knit_darwin_arm64.tar.gz"
-      sha256 "6c047630af29966017e57dfccf181095d7fd79dbe3812704f5ff269042aa4467"
+      url "https://github.com/knitcodegen/knit/releases/download/v0.6.0-beta/knit_darwin_arm64.tar.gz"
+      sha256 "dfca41f169ed80281eae0a3b20d246c4707640af0d75b9321a7da4836e313f95"
 
       def install
         bin.install "knit"
@@ -29,24 +29,24 @@ class Knit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/knitcodegen/knit/releases/download/v0.5.0-beta/knit_linux_arm.tar.gz"
-      sha256 "c6fcd1ad805ad8682cfac452201bbe463b97cbe0c5c157957fb0b0ad7d255ede"
+      url "https://github.com/knitcodegen/knit/releases/download/v0.6.0-beta/knit_linux_arm.tar.gz"
+      sha256 "e5d4cacfef7cfcbe794e0925191b14665c244d58e2a418b24a02156044b2e4a8"
 
       def install
         bin.install "knit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/knitcodegen/knit/releases/download/v0.5.0-beta/knit_linux_amd64.tar.gz"
-      sha256 "33977f9f77384793ec55cc2a57afa020d29664adbcd423260d50960d92435c5f"
+      url "https://github.com/knitcodegen/knit/releases/download/v0.6.0-beta/knit_linux_amd64.tar.gz"
+      sha256 "6fe924c541518500adc86c44f50eb24f74d05c9b30e313b9e5d5b8c94b4bad2e"
 
       def install
         bin.install "knit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/knitcodegen/knit/releases/download/v0.5.0-beta/knit_linux_arm64.tar.gz"
-      sha256 "26821ee2c568a4e7e7a646fe2adf50ace2d719c4c087e8edd35505aa172c35e1"
+      url "https://github.com/knitcodegen/knit/releases/download/v0.6.0-beta/knit_linux_arm64.tar.gz"
+      sha256 "f050044f0694dd9fe08c0cbf8e75123901d56138b30d9276cff4f743157afbda"
 
       def install
         bin.install "knit"
